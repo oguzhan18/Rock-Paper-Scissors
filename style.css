@@ -1,0 +1,121 @@
+html {
+  background: linear-gradient(#000000 10%, #111111 90%);
+  min-height: 100%;
+}
+html * {
+  outline: 0;
+}
+
+section {
+  height: 120px;
+  width:400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(112, 106, 106);
+  padding: 10px;
+  margin-top: -100px;
+  margin-left: -210px;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 0 rgb(255, 255, 255);
+}
+section button {
+  background: 0;
+  border: 0;
+  height: 120px;
+  float: left;
+}
+section button .fa {
+  font-size: 80px;
+  display: block;
+  margin-bottom: 20px;
+}
+section button:hover {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209282/play.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section button.win {
+  color: #15a015;
+}
+section button.loss {
+  color: #ff1515;
+}
+section button.tie {
+  color: #1515ff;
+}
+section .result {
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  height: 40px;
+  color: #fff;
+  top: -40px;
+  right: 0;
+  left: 0;
+}
+section .result .animated {
+  -webkit-animation-duration: 1.7s;
+  animation-duration: 1.7s;
+}
+
+aside {
+  background-color: #e9eaed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: fixed;
+  width: 200px;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+aside .legend {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  background-color: #fff;
+  height: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(255, 255, 255, 0.966) 0 1px 10px 0;
+}
+aside .legend .me, aside .legend .cpu {
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+aside .history-item {
+  height: 40px;
+  font-size: 24px;
+  line-height: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+aside .history-item.win {
+  background-color: rgb(255, 255, 255);
+}
+aside .history-item.loss {
+  background-color: rgb(255, 255, 255);
+}
+aside .history-item.tie {
+  background-color: rgb(0, 0, 150);
+}
+aside .history-item .fa {
+  text-align: center;
+  width: 50%;
+}
+aside .scoreboard {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 200px;
+  background-color: #fff;
+  height: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(255, 255, 255, 0.15) 0 -1px 10px 0;
+}
